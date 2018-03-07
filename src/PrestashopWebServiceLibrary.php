@@ -260,7 +260,6 @@ class PrestashopWebServiceLibrary
      */
 	public function get($options)
 	{
-		dd($options);
 		if (isset($options['url']))
 			$url = $options['url'];
 		elseif (isset($options['resource']))
@@ -357,7 +356,7 @@ class PrestashopWebServiceLibrary
 
 		if (isset($options['rawXmlOutput']) && $options['rawXmlOutput'] == TRUE)
             return $request['response'];
-        
+
 		return self::parseXML($request['response']);
 	}
 
