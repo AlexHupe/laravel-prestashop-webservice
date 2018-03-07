@@ -256,6 +256,7 @@ class PrestashopWebServiceLibrary
      */
 	public function get($options)
 	{
+		dd($options);
 		if (isset($options['url']))
 			$url = $options['url'];
 		elseif (isset($options['resource']))
